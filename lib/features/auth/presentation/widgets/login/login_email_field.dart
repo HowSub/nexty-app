@@ -12,6 +12,12 @@ class _LoginEmailFieldState extends State<LoginEmailField> {
   @override
   Widget build(BuildContext context) {
     return TextField(
+      style: TextStyle(
+        fontFamily: 'Inter',
+        fontWeight: FontWeight.w400,
+        color: const Color(0xFFC0C0C0),
+        fontSize: 15,
+      ),
       decoration: InputDecoration(
         labelText: 'Почта',
         labelStyle: TextStyle(color: Colors.white),
@@ -25,7 +31,6 @@ class _LoginEmailFieldState extends State<LoginEmailField> {
           borderRadius: BorderRadius.circular(15.0),
         ),
       ),
-      style: TextStyle(color: Colors.white),
     );
   }
 }

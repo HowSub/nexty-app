@@ -1,26 +1,25 @@
 import 'package:flutter/material.dart';
-import 'package:nexty/config/theme/app_theme.dart';
 
-class LoginPasswordField extends StatefulWidget {
-  const LoginPasswordField({super.key});
+class RegisterPasswordField extends StatefulWidget {
+  const RegisterPasswordField({super.key});
 
   @override
-  State<LoginPasswordField> createState() => _LoginPasswordFieldState();
+  State<RegisterPasswordField> createState() => _RegisterPasswordFieldState();
 }
 
-class _LoginPasswordFieldState extends State<LoginPasswordField> {
+class _RegisterPasswordFieldState extends State<RegisterPasswordField> {
   bool _passwordVisible = false;
 
   @override
   Widget build(BuildContext context) {
-    return TextField(
+    return TextFormField(
       style: TextStyle(
         fontFamily: 'Inter',
         fontWeight: FontWeight.w400,
         color: const Color(0xFFC0C0C0),
         fontSize: 15,
       ),
-      obscureText: !_passwordVisible,
+      obscureText: true,
       decoration: InputDecoration(
         suffixIcon: IconButton(
           color: Colors.white,
@@ -35,15 +34,20 @@ class _LoginPasswordFieldState extends State<LoginPasswordField> {
           },
         ),
         labelText: 'Пароль',
-        labelStyle: TextStyle(color: Colors.white),
+        labelStyle: TextStyle(
+          fontFamily: 'Inter',
+          fontWeight: FontWeight.w400,
+          color: Colors.white,
+          fontSize: 15,
+        ),
         floatingLabelBehavior: FloatingLabelBehavior.always,
         enabledBorder: OutlineInputBorder(
-          borderSide: BorderSide(color: Colors.white, width: 1.0),
-          borderRadius: BorderRadius.circular(15.0),
+          borderRadius: BorderRadius.circular(20),
+          borderSide: BorderSide(color: Colors.white, width: 1),
         ),
         focusedBorder: OutlineInputBorder(
-          borderSide: BorderSide(color: greenColor, width: 1.0),
-          borderRadius: BorderRadius.circular(15.0),
+          borderRadius: BorderRadius.circular(20),
+          borderSide: BorderSide(color: Colors.white, width: 1),
         ),
       ),
     );
