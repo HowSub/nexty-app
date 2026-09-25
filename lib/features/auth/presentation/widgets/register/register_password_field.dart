@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nexty/config/theme/app_theme.dart';
 
 class RegisterPasswordField extends StatefulWidget {
   const RegisterPasswordField({super.key});
@@ -47,7 +48,7 @@ class _RegisterPasswordFieldState extends State<RegisterPasswordField> {
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(20),
-          borderSide: BorderSide(color: Colors.white, width: 1),
+          borderSide: BorderSide(color: greenColor, width: 1),
         ),
       ),
     );

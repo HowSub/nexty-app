@@ -59,6 +59,7 @@ class LoginScreen extends StatelessWidget {
                 GestureDetector(
                   onTap: () {
                     context.go('/register');
+                    
                   },
                   child: RichText(
                     text: TextSpan(

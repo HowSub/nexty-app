@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nexty/config/theme/app_theme.dart';
 
 class RegisterConfirmPasswordField extends StatefulWidget {
   const RegisterConfirmPasswordField({super.key});
@@ -35,7 +36,7 @@ class _RegisterConfirmPasswordState
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(20),
-          borderSide: BorderSide(color: Colors.white, width: 1),
+          borderSide: BorderSide(color: greenColor, width: 1),
         ),
       ),
     );
