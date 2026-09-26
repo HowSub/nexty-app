@@ -20,7 +20,7 @@ class _RegisterPasswordFieldState extends State<RegisterPasswordField> {
         color: const Color(0xFFC0C0C0),
         fontSize: 15,
       ),
-      obscureText: true,
+      obscureText: _passwordVisible,
       decoration: InputDecoration(
         suffixIcon: IconButton(
           color: Colors.white,
